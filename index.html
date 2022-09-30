@@ -1,0 +1,20 @@
+<body>
+    Number 1: <input id="number1Field"><br>
+    Number 2: <input id="number2Field"><br>
+    <p>
+        <button id="add" onclick="onAddBtnClicked()">Add</button>
+        <button id="subtract">Subtract</button>
+        <button id="multipy">Multiply</button>
+        <button id="divide">Divide</button>
+     </p><br>
+    Answer: <input id="answerField" >
+    <script>
+        function init(){
+            function onAddBtnClicked(){
+                window.answerField.value = window.number1Field + window.number2Field
+            }
+        }
+        window.onload = init;
+        //document.addEventListener("load", init);
+    </script>
+</body>
